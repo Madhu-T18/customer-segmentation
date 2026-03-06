@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Customer Segmentation</title>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<h3>Customer Clusters</h3>
+<img src="{{ url_for('static', filename='cluster_plot.png') }}" width="500">
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Customer Segmentation</h1>
+<h3>Dataset Info</h3>
+<p>Total Customers: {{ total }}</p>
+<p>Average Income: {{ income }}</p>
+
+<form action="/predict" method="post">
+
+<input type="number" name="income" placeholder="Annual Income" required>
+
+<br>
+
+<input type="number" name="score" placeholder="Spending Score" required>
+<h2>{{ prediction_text }}</h2>
+<br>
+
+<button type="submit">Predict Cluster</button>
+
+</form>
+
+<div class="result">
+{{ prediction_text }}
+</div>
+
+</div>
+
+</body>
+</html>
