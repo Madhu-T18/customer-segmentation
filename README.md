@@ -7,6 +7,23 @@ Customer segmentation helps businesses understand different types of customers a
 The project implements **K-Means Clustering** and deploys the model using **Flask** to allow users to input new customer data and get predictions.
 
 ---
+## Project Structure
+customer_segmentation
+│
+├── app.py
+├── train_model.py
+│
+├── model
+│ └── kmeans_model.pkl
+│
+├── templates
+│ └── index.html
+│
+├── data
+│ └── Mall_Customers.csv
+│
+└── cluster_visualization.png
+---
 
 ## Technologies Used
 
