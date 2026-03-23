@@ -64,23 +64,7 @@ Model evaluation metric:
 
 ---
 
-## Project Structure
-customer_segmentation
-│
-├── app.py
-├── train_model.py
-│
-├── model
-│ └── kmeans_model.pkl
-│
-├── templates
-│ └── index.html
-│
-├── data
-│ └── Mall_Customers.csv
-│
-└── cluster_visualization.png
----
+
 
 # Installation & Usage
 
